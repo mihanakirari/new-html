@@ -1,0 +1,116 @@
+body {
+    font-family: Verdana, Roboto, "Droid Sans", "游ゴシック", 
+    YuGothic, "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", sans-serif;
+  }
+  
+  /* --for PC--*/
+  @media screen and (min-width: 480px){
+  
+    .fade{
+      margin-top: 80vh;
+      text-align: center;
+      opacity : 0;
+      transition: opacity 3s;
+    }
+     
+    .fade.view{
+      opacity: 1;
+    }
+
+    .js-fadein{
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(20px);
+      transition: all 1s;
+    }
+
+    .js-fadein.is-show{
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0px);
+    }
+
+    .type1 {
+      background-color: rgba(3, 3, 3, 0.849);
+      width :800px;
+      margin: 30px;
+      padding: 10px;
+      border: 2px solid rgb(0, 0, 0);
+      margin: 30px auto;
+      border-radius: 1.0em;
+      position: relative;
+      z-index: 1;
+    }
+      
+    
+
+    .type2 {
+      background-color: rgba(255,255,255,0.9);
+      width :800px;
+      margin: 30px;
+      padding: 10px;
+      border: 2px solid gray;
+      margin: 30px auto;
+      border-radius: 1.2em;
+      position: relative;
+      z-index: 1;
+    }
+  
+    .video {
+      width: 600px;
+      height: 450px;
+      margin: 0px 0px 0px 80px;
+    }
+    
+  }
+  
+  /* --for smartphone--*/
+  @media screen and (max-width: 480px){
+    input{ font-size:16px; }
+    
+    .type1 {
+      background-color: rgba(250, 250, 250, 0.7);
+      width :340px;
+      margin: 1px;
+      padding: 1px;
+      border: 2px solid rgb(0, 0, 0);
+      margin: 3px auto;
+      border-radius: 1.2em;
+      position: relative;
+      z-index: 1;
+    }
+  
+    .type2 {
+      background-color: rgba(255,255,255,0.9);
+      width :340px;
+      margin: 1px;
+      padding: 1px;
+      border: 2px solid gray;
+      margin: 3px auto;
+      border-radius: 1.2em;
+      position: relative;
+      z-index: 1;
+    }
+  
+   
+    .video {
+      width: 320px;
+      height: 240;
+      margin: 0px 0px 0px 10px;
+    }
+  
+    
+  
+  
+  .fade{
+    margin-top: 80vh;
+    text-align: center;
+    opacity : 0;
+    transition: opacity 3s;
+  }
+   
+  .fade.view{
+    opacity: 1;
+  }
+
+}
